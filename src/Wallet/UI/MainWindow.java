@@ -2,11 +2,8 @@ package Wallet.UI;
 
 import java.awt.Color;
 import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
+import java.awt.*;
 
 public class MainWindow{
 
@@ -30,16 +27,21 @@ public class MainWindow{
         JButton hesabım = new JButton("Hesabım");
         JButton eft = new JButton("EFT/Havale");
         JButton odeme = new JButton("Ödeme");
-        profil.setBounds(0, pencere.setSize.height, 150, 100);
-        hesabım.setBounds(0, 100, 150, 100);
-        eft.setBounds(0, 200, 150, 100);
-        odeme.setBounds(0, 300, 150, 100);
+        profil.setBounds(0, 0, arac.getScreenSize().width/2/7, arac.getScreenSize().height/2/4);
+        hesabım.setBounds(0, arac.getScreenSize().height/2/4, arac.getScreenSize().width/2/7, arac.getScreenSize().height/2/4);
+        eft.setBounds(0, arac.getScreenSize().height/2/4*2, arac.getScreenSize().width/2/7, arac.getScreenSize().height/2/4);
+        odeme.setBounds(0, arac.getScreenSize().height/2/4*3, arac.getScreenSize().width/2/7, arac.getScreenSize().height/2/4);
+
 
 
         panel.add(profil);
         panel.add(hesabım);
         panel.add(eft);
         panel.add(odeme);
+
+        JLabel lblText = new JLabel("Hello World!", SwingConstants.CENTER);
+        pencere.getContentPane().add(lblText);
+
 
         pencere.add(panel);
         pencere.setVisible(true);
