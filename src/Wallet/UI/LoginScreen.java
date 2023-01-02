@@ -45,8 +45,7 @@ public class LoginScreen {
 
             LoginService service = new LoginService();
             if (service.checkAuth(user)) {
-                MainWindow pencere = new MainWindow();
-                pencere.screen();
+                Profil.profil();
                 LoginFrame.setVisible(false);
             } else {
                 //HATA MESAJI BURDA GÖSTERİLECEK

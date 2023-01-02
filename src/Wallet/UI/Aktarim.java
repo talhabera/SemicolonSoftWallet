@@ -2,7 +2,6 @@ package Wallet.UI;
 
 import javax.swing.*;
 
-import static Wallet.UI.Profil.tablo;
 import static Wallet.UI.MainWindow.*;
 
 public class Aktarim {
@@ -13,7 +12,7 @@ public class Aktarim {
     public static JLabel tutar = new JLabel("Göndermek İstediğiniz Tutar");
 
 
-    static void aktarim() {
+    public static void aktarim() {
         screen();
 
         iban.setBounds(arac.getScreenSize().width / 2 / 7 * 3, arac.getScreenSize().height / 2 / 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);

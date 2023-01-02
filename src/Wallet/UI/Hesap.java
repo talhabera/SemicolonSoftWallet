@@ -10,7 +10,7 @@ public class Hesap {
     public static int bakiye = 12345;
     public static JLabel lBakiye = new JLabel("Bakiyeniz " + bakiye + "TL");
 
-    static void hesap() {
+    public static void hesap() {
         screen();
 
         lBakiye.setFont(new Font("Para", Font.PLAIN, 36));

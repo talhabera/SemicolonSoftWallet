@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IUserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Services/ILoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Services/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/Entities/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/Handlers/PasswordHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="Kodlar düzenlendi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/JEft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Aktarim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/JHesabim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Hesap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/JOdeme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Odeme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/JProfil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Profil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Aktarim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Aktarim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Hesap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Hesap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wallet/UI/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/LoginScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Odeme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Odeme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Profil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Profil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,11 +73,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672687315521</updated>
-      <workItem from="1672687316738" duration="4626000" />
+      <workItem from="1672687316738" duration="5175000" />
     </task>
+    <task id="LOCAL-00001" summary="Kodlar düzenlendi">
+      <created>1672692076986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672692076986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Kodlar düzenlendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kodlar düzenlendi" />
   </component>
 </project>

@@ -15,13 +15,12 @@ public class Odeme {
     static String kolonAdlari[] = {"Firma", "Odenecek tutar"};
     public static JTable tablo = new JTable(data, kolonAdlari);
 
-    static void odeme() {
+    public static void odeme() {
         screen();
 
         JButton odemeGonder = new JButton("Ödeme");
-        odemeGonder.setBounds(0, 0, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 4);
-
-        tablo.add(odemeGonder);
+        odemeGonder.setBounds(arac.getScreenSize().width / 2 / 7 * 3, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
+        panel.add(odemeGonder);
 
         tablo.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10, arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 4 * 2);
         panel.add(tablo);
