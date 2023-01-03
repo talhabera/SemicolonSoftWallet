@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="Kodlar düzenlendi">
+      <change afterPath="$PROJECT_DIR$/Ek/mysql-connector.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Context/AppContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Aktarim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Aktarim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ek/Database.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ek/Wallet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Services/ILoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Services/ILoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Wrappers/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Hesap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Hesap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/LoginScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +44,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/tvlha/Desktop/mysql-connector.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tvlha\Desktop\SemicolonSoftWallet\Ek" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Wallet.Main" />
       <module name="SemicolonSoftWallet" />
@@ -55,8 +74,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="mysql-connector.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/Ek/mysql-connector.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.mysql-connector.jar" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -69,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672687315521</updated>
-      <workItem from="1672687316738" duration="5288000" />
+      <workItem from="1672687316738" duration="8806000" />
     </task>
     <task id="LOCAL-00001" summary="Kodlar düzenlendi">
       <created>1672692076986</created>
@@ -85,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672692548946</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Kodlar düzenlendi">
+      <created>1672692648298</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672692648298</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,5 +136,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kodlar düzenlendi" />
     <option name="LAST_COMMIT_MESSAGE" value="Kodlar düzenlendi" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

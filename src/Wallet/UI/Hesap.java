@@ -17,6 +17,5 @@ public class Hesap {
         lBakiye.setForeground(new Color(50, 50, 10));
         lBakiye.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 4, arac.getScreenSize().width / 2 / 7 * 6, 100);
         panel.add(lBakiye);
-
     }
 }

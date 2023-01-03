@@ -1,6 +1,6 @@
-package Wallet.Entities;
+package Wallet.Wrappers;
 
-public class Value<T>{
+public class Property<T>{
     private T _value;
 
     public T get(){
