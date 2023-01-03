@@ -25,6 +25,10 @@ public class LoginScreen {
         JLabel lKullanici = new JLabel("Kullanıcı Adı ");
         JLabel lPasword = new JLabel("Şifre");
 
+        JLabel lHatalıpasword = new JLabel("");
+        lHatalıpasword.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 6 + 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
+
+
         lKullanici.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
         textKullaniciAdi.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 2, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
 
@@ -33,6 +37,7 @@ public class LoginScreen {
 
         loginGonder.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
 
+        LoginPanel.add(lHatalıpasword);
         LoginPanel.add(lKullanici);
         LoginPanel.add(textKullaniciAdi);
         LoginPanel.add(lPasword);
@@ -49,6 +54,8 @@ public class LoginScreen {
                 LoginFrame.setVisible(false);
             } else {
                 //HATA MESAJI BURDA GÖSTERİLECEK
+                lHatalıpasword.setText("Giriş Bilgileri Hatalı");
+
             }
         });
 
