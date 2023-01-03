@@ -1,4 +1,4 @@
-package Wallet.DataAccess.Services;
+package Wallet.Services;
 
 import Wallet.DataAccess.Repositories.IUserRepo;
 import Wallet.DataAccess.Repositories.UserRepo;

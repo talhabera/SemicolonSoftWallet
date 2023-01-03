@@ -1,6 +1,6 @@
 package Wallet.UI;
 
-import Wallet.DataAccess.Services.LoginService;
+import Wallet.Services.LoginService;
 import Wallet.Entities.User;
 
 import javax.swing.*;
