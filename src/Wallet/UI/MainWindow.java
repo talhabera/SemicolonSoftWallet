@@ -19,7 +19,7 @@ public class MainWindow {
 
         panel.removeAll();
 
-        panel.setBackground(Color.yellow);
+        //panel.setBackground(Color.yellow);
 
         JButton profil = new JButton("Profil");
         JButton hesabim = new JButton("Hesabım");

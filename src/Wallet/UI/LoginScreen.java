@@ -9,6 +9,7 @@ import java.awt.*;
 public class LoginScreen {
 
     public void login() {
+       // Color textcolor = new Color(45,32,22);
         Toolkit arac = Toolkit.getDefaultToolkit();
         JPanel LoginPanel = new JPanel(null);
         JFrame LoginFrame = new JFrame();
@@ -25,8 +26,8 @@ public class LoginScreen {
         JLabel lKullanici = new JLabel("Kullanıcı Adı ");
         JLabel lPasword = new JLabel("Şifre");
 
-        JLabel lHatalıpasword = new JLabel("");
-        lHatalıpasword.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 6 + 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
+        JLabel lHatalipasword = new JLabel("");
+        lHatalipasword.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 6 + 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
 
 
         lKullanici.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
@@ -37,7 +38,9 @@ public class LoginScreen {
 
         loginGonder.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
 
-        LoginPanel.add(lHatalıpasword);
+        //textKullaniciAdi.setBackground(textcolor);
+
+        LoginPanel.add(lHatalipasword);
         LoginPanel.add(lKullanici);
         LoginPanel.add(textKullaniciAdi);
         LoginPanel.add(lPasword);
@@ -49,12 +52,14 @@ public class LoginScreen {
             user.password.set(textKullaniciPassword.getText());
 
             LoginService service = new LoginService();
-            if (service.checkAuth(user)) {
+            int a=1;
+            if (a==1)             //(service.checkAuth(user)) Geçiçi kapatıldı
+            {
                 Profil.profil();
                 LoginFrame.setVisible(false);
             } else {
                 //HATA MESAJI BURDA GÖSTERİLECEK
-                lHatalıpasword.setText("Giriş Bilgileri Hatalı");
+                lHatalipasword.setText("Giriş Bilgileri Hatalı");
 
             }
         });

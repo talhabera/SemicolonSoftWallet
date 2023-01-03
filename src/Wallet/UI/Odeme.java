@@ -23,6 +23,7 @@ public class Odeme {
         panel.add(odemeGonder);
 
         tablo.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10, arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 4 * 2);
+
         panel.add(tablo);
     }
 }
