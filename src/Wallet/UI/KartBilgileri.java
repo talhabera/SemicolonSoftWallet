@@ -34,6 +34,8 @@ public class KartBilgileri {
 
         panel.add(kartSil);
         panel.add(kartEkle);
+        kartEkle.addActionListener(actionEvent -> FormKartbilgileriEkle.formKartbilgileriEkle());
+
 
         panel.add(tabloKart);
 

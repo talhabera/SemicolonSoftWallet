@@ -27,6 +27,8 @@ public class Hesap {
 
         panel.add(hesapSil);
         panel.add(hesapEkle);
+        hesapEkle.addActionListener(actionEvent -> FormHesapEkle.formhesapEkle());
+
 
         tablo.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10, arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 4 * 2);
 
