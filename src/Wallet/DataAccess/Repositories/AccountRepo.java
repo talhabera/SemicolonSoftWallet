@@ -2,7 +2,6 @@ package Wallet.DataAccess.Repositories;
 
 import Wallet.DataAccess.Context.AppContext;
 import Wallet.Entities.Account;
-import Wallet.Entities.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
