@@ -1,10 +1,9 @@
 package Wallet.Handlers;
 
-import java.security.NoSuchAlgorithmException;
 import java.security.MessageDigest;
 
 public class PasswordHandler {
-    public static String ConvertToMd5(String password) {
+    public static String convertToMd5(String password) {
         String retVal = "";
         try {
             MessageDigest m = MessageDigest.getInstance("MD5");

@@ -9,13 +9,20 @@ import java.sql.Statement;
 
 public class UserRepo implements IUserRepo {
 
+    /**
+     * Gönderilen kullanıcı adına göre dbden User nesnesi döner
+     *
+     * @param username Kullanıcı adı
+     * @return
+     */
     @Override
     public User getUserByUsername(String username) {
         try {
             Statement state = AppContext.getConnection().createStatement();
             ResultSet rs = state.executeQuery("SELECT * FROM User WHERE Username = '" + username + "'");
-            if (rs.next()){
+            if (rs.next()) {
                 User user = new User();
+                user.id.set(rs.getInt("Id"));
                 user.username.set(rs.getString("Username"));
                 user.password.set(rs.getString("Password"));
                 user.firstname.set(rs.getString("Firstname"));
@@ -23,7 +30,6 @@ public class UserRepo implements IUserRepo {
                 user.address.set(rs.getString("Address"));
                 user.phone.set(rs.getString("Phone"));
                 user.identity.set(rs.getString("Identity"));
-                user.balance.set(rs.getInt("Balance"));
                 return user;
             }
         } catch (SQLException e) {

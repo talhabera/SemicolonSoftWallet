@@ -12,7 +12,6 @@ public class ProfileService implements IProfileService {
                 {"Soyad", user.lastname.get()},
                 {"Kimlik Numarası", user.identity.get()},
                 {"Adres", user.address.get()},
-                {"Telefon", user.phone.get()},
-                {"Bakiye", user.balance.get()+""}};
+                {"Telefon", user.phone.get()}};
     }
 }

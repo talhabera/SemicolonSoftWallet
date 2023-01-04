@@ -1,7 +1,7 @@
 package Wallet.Entities;
 
+import Wallet.Wrappers.Property;
+
 public abstract class BaseEntity {
-
-    private int id;
-
+    public Property<Integer> id = new Property<>();
 }
