@@ -3,11 +3,15 @@ package Wallet.DataAccess.Repositories;
 import Wallet.DataAccess.Context.AppContext;
 import Wallet.Entities.Account;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+/**
+ * @author Talha Bera
+ */
 public class AccountRepo implements IAccountRepo {
 
     /**
@@ -36,5 +40,51 @@ public class AccountRepo implements IAccountRepo {
         }
 
         return accounts;
+    }
+
+    /**
+     * Gönderilen değerin Id'sindeki hesabı günceller
+     *
+     * @param account güncellenecek hesap
+     */
+    @Override
+    public void updateAccount(Account account) {
+        try
+        {
+            String query = "update account set Balance = ? where Id = ?";
+
+            PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
+            preparedStmt.setFloat   (1, account.balance.get());
+            preparedStmt.setInt(2, account.id.get());
+
+            preparedStmt.executeUpdate();
+        }
+        catch (Exception e)
+        {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    /**
+     * Gönderilen hesap bilgisini database'e ekler
+     *
+     * @param account eklenecek hesap
+     */
+    @Override
+    public void addAccount(Account account) {
+        try
+        {
+            String query = "insert into account (Balance, UserId) values (?, ?)";
+
+            PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
+            preparedStmt.setFloat   (1, account.balance.get());
+            preparedStmt.setInt(2, account.userId.get());
+
+            preparedStmt.execute();
+        }
+        catch (Exception e)
+        {
+            System.err.println(e.getMessage());
+        }
     }
 }

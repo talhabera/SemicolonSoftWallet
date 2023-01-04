@@ -1,14 +1,17 @@
 package Wallet.DataAccess.Repositories;
 
 import Wallet.DataAccess.Context.AppContext;
-import Wallet.Entities.Asset;
 import Wallet.Entities.Debt;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+/**
+ * @author Talha Bera
+ */
 public class DebtRepo implements IDebtRepo {
 
     /**
@@ -38,5 +41,53 @@ public class DebtRepo implements IDebtRepo {
         }
 
         return debts;
+    }
+
+    /**
+     * Gönderilen değerin Id'sindeki borç bilgisini günceller
+     *
+     * @param debt güncellenecek borç
+     */
+    @Override
+    public void updateDebt(Debt debt) {
+        try
+        {
+            String query = "update debt set Amount = ?, Description = ? where Id = ?";
+
+            PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
+            preparedStmt.setFloat   (1, debt.amount.get());
+            preparedStmt.setString   (2, debt.description.get());
+            preparedStmt.setInt(3, debt.id.get());
+
+            preparedStmt.executeUpdate();
+        }
+        catch (Exception e)
+        {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    /**
+     * Gönderilen borç bilgisini database'e ekler
+     *
+     * @param debt eklenecek borç
+     */
+    @Override
+    public void addDebt(Debt debt) {
+        try
+        {
+            String query = "insert into debt (Amount, Description, UserId) values (?, ?, ?)";
+
+            PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
+            preparedStmt.setFloat   (1, debt.amount.get());
+            preparedStmt.setString   (2, debt.description.get());
+            preparedStmt.setInt(3, debt.userId.get());
+
+            preparedStmt.execute();
+        }
+        catch (Exception e)
+        {
+            System.err.println(e.getMessage());
+        }
     }
 }

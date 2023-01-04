@@ -5,7 +5,7 @@ import javax.swing.*;
 import static Wallet.UI.MainWindow.*;
 import static Wallet.UI.MainWindow.panel;
 
-public class formAlacakEkle {
+public class FormAlacakEkle {
 
     public static void alacakEkle(){
         screen();

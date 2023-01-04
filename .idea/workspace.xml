@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="guncelle">
+      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/CreditCardRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Context/AppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Context/AppContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/AccountRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/AccountRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/AssetRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/AssetRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/CreditRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/CreditRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/DebtRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/DebtRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IAccountRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IAccountRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IAssetRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IAssetRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/ICreditCardRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/ICreditCardRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/ICreditRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/ICreditRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IDebtRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IDebtRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IUserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IUserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/Asset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/Credit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/Debt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/Debt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Aktarim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Alacak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Alacak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/formAlacakEkle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/FormAlacakEkle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +142,7 @@
       <updated>1672687315521</updated>
       <workItem from="1672687316738" duration="8806000" />
       <workItem from="1672837400934" duration="2999000" />
+      <workItem from="1672851775417" duration="3591000" />
     </task>
     <task id="LOCAL-00001" summary="Kodlar düzenlendi">
       <created>1672692076986</created>
@@ -183,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672841854095</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="guncelle">
+      <created>1672841892446</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672841892446</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

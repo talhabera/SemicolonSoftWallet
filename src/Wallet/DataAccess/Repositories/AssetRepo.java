@@ -1,14 +1,17 @@
 package Wallet.DataAccess.Repositories;
 
 import Wallet.DataAccess.Context.AppContext;
-import Wallet.Entities.Account;
 import Wallet.Entities.Asset;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+/**
+ * @author Talha Bera
+ */
 public class AssetRepo implements IAssetRepo {
 
 
@@ -39,5 +42,53 @@ public class AssetRepo implements IAssetRepo {
         }
 
         return assets;
+    }
+
+    /**
+     * Gönderilen değerin Id'sindeki alacak bilgisini günceller
+     *
+     * @param asset güncellenecek alacak
+     */
+    @Override
+    public void updateAsset(Asset asset) {
+        try
+        {
+            String query = "update asset set Amount = ?, Description = ? where Id = ?";
+
+            PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
+            preparedStmt.setFloat   (1, asset.amount.get());
+            preparedStmt.setString   (2, asset.description.get());
+            preparedStmt.setInt(3, asset.id.get());
+
+            preparedStmt.executeUpdate();
+        }
+        catch (Exception e)
+        {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    /**
+     * Gönderilen alacak bilgisini database'e ekler
+     *
+     * @param asset eklenecek alacak
+     */
+    @Override
+    public void addAsset(Asset asset) {
+        try
+        {
+            String query = "insert into asset (Amount, Description, UserId) values (?, ?, ?)";
+
+            PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
+            preparedStmt.setFloat   (1, asset.amount.get());
+            preparedStmt.setString   (2, asset.description.get());
+            preparedStmt.setInt(3, asset.userId.get());
+
+            preparedStmt.execute();
+        }
+        catch (Exception e)
+        {
+            System.err.println(e.getMessage());
+        }
     }
 }

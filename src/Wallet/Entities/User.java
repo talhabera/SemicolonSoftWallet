@@ -3,6 +3,9 @@ package Wallet.Entities;
 import Wallet.Handlers.PasswordHandler;
 import Wallet.Wrappers.Property;
 
+/**
+ * @author Talha Bera
+ */
 public class User extends BaseEntity {
     public Property<String> username = new Property<>();
     public Property<String> password = new Property<>() {

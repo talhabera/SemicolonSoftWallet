@@ -2,6 +2,9 @@ package Wallet.DataAccess.Repositories;
 
 import Wallet.Entities.User;
 
+/**
+ * @author Talha Bera
+ */
 public interface IUserRepo {
 
     /**

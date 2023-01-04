@@ -7,6 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * @author Talha Bera
+ */
 public class UserRepo implements IUserRepo {
 
     /**
