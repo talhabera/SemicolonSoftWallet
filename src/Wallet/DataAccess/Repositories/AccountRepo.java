@@ -32,6 +32,7 @@ public class AccountRepo implements IAccountRepo {
                 Account account = new Account();
                 account.id.set(rs.getInt("Id"));
                 account.balance.set(rs.getFloat("Balance"));
+                account.description.set(rs.getString("Description"));
                 account.userId.set(userId);
                 accounts.add(account);
             }
@@ -51,11 +52,12 @@ public class AccountRepo implements IAccountRepo {
     public void updateAccount(Account account) {
         try
         {
-            String query = "update account set Balance = ? where Id = ?";
+            String query = "update account set Balance = ?, Description = ? where Id = ?";
 
             PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
             preparedStmt.setFloat   (1, account.balance.get());
-            preparedStmt.setInt(2, account.id.get());
+            preparedStmt.setString   (2, account.description.get());
+            preparedStmt.setInt(3, account.id.get());
 
             preparedStmt.executeUpdate();
         }
@@ -74,11 +76,12 @@ public class AccountRepo implements IAccountRepo {
     public void addAccount(Account account) {
         try
         {
-            String query = "insert into account (Balance, UserId) values (?, ?)";
+            String query = "insert into account (Balance, UserId, Description) values (?, ?, ?)";
 
             PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
             preparedStmt.setFloat   (1, account.balance.get());
             preparedStmt.setInt(2, account.userId.get());
+            preparedStmt.setString   (3, account.description.get());
 
             preparedStmt.execute();
         }

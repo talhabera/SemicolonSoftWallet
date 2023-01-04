@@ -57,7 +57,7 @@ public class MainWindow {
         kart.addActionListener(actionEvent -> KartBilgileri.kartBilgileri());
 
         panel.add(kredi);
-        kredi.addActionListener(actionEvent -> KrediKart.krediKart());
+        kredi.addActionListener(actionEvent -> Kredi.krediKart());
 
         pencere.add(panel);
         pencere.setVisible(true);

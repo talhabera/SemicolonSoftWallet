@@ -34,6 +34,7 @@ public class CreditRepo implements ICreditRepo {
                 credit.taken.set(rs.getFloat("Taken"));
                 credit.given.set(rs.getFloat("Given"));
                 credit.interest.set(rs.getFloat("Interest"));
+                credit.description.set(rs.getString("Description"));
                 credit.userId.set(userId);
                 credits.add(credit);
             }
@@ -53,13 +54,14 @@ public class CreditRepo implements ICreditRepo {
     public void updateCredit(Credit credit) {
         try
         {
-            String query = "update credit set Taken = ?, Interest = ?, Given = ? where Id = ?";
+            String query = "update credit set Taken = ?, Interest = ?, Given = ?, Description = ? where Id = ?";
 
             PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
             preparedStmt.setFloat   (1, credit.taken.get());
             preparedStmt.setFloat   (2, credit.interest.get());
             preparedStmt.setFloat   (3, credit.given.get());
-            preparedStmt.setInt   (4, credit.id.get());
+            preparedStmt.setString   (4, credit.description.get());
+            preparedStmt.setInt   (5, credit.id.get());
 
             preparedStmt.executeUpdate();
         }
@@ -78,12 +80,14 @@ public class CreditRepo implements ICreditRepo {
     public void addCredit(Credit credit) {
         try
         {
-            String query = "insert into credit (taken, given, interest) values (?, ?, ?)";
+            String query = "insert into credit (taken, given, interest, Description, UserId) values (?, ?, ?, ?, ?)";
 
             PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
             preparedStmt.setFloat   (1, credit.taken.get());
             preparedStmt.setFloat   (2, credit.given.get());
             preparedStmt.setFloat   (3, credit.interest.get());
+            preparedStmt.setString   (4, credit.description.get());
+            preparedStmt.setInt   (5, credit.userId.get());
 
             preparedStmt.execute();
         }

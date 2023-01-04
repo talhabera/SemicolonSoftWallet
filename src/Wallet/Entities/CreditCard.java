@@ -9,5 +9,6 @@ public class CreditCard extends BaseEntity {
     public Property<Float> cardLimit = new Property<>();
     public Property<Float> interest = new Property<>();
     public Property<Float> taken = new Property<>();
+    public Property<String> description = new Property<>();
     public Property<Integer> userId = new Property<>();
 }

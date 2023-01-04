@@ -1,6 +1,11 @@
 package Wallet.UI;
 
+import Wallet.DataAccess.Repositories.AccountRepo;
+import Wallet.DataAccess.Repositories.IAccountRepo;
+import Wallet.Entities.Account;
+
 import java.awt.*;
+import java.util.ArrayList;
 import javax.swing.*;
 
 import static Wallet.UI.MainWindow.*;
@@ -12,13 +17,21 @@ public class Hesap {
             {"iNTERNET", "2357"},
             {"cep tel", "543"},
             {"elektrik", "1234"}};
-    static String kolonAdlari[] = {"Kart İsmi", "Para Tutarı"};
-
-    public static JTable tablo = new JTable(data, kolonAdlari);
-
 
     public static void hesap() {
         screen();
+
+        IAccountRepo repo = new AccountRepo();
+        ArrayList<Account> accounts = repo.getAccountsByUserId(user.id.get());
+        ArrayList<Object[]> list = new ArrayList<>();
+        list.add(new Object[]{"Hesap İsmi", "Bakiye"});
+        for (int i = 0; i < accounts.size(); i++) {
+            System.out.println(accounts.get(i).description.get());
+            Object[] obj = {accounts.get(i).description.get(), accounts.get(i).balance.get()};
+            list.add(obj);
+        }
+        JTable tablo = new JTable(list.toArray(new Object[][]{}), new String[]{"Hesap İsmi", "Bakiye"});
+
 
         JButton hesapSil = new JButton("Hesap Sil");
         JButton hesapEkle = new JButton("Hesap Ekle");

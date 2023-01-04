@@ -1,5 +1,12 @@
 package Wallet.UI;
 
+import Wallet.DataAccess.Repositories.AssetRepo;
+import Wallet.DataAccess.Repositories.DebtRepo;
+import Wallet.DataAccess.Repositories.IAssetRepo;
+import Wallet.DataAccess.Repositories.IDebtRepo;
+import Wallet.Entities.Asset;
+import Wallet.Entities.Debt;
+
 import javax.swing.*;
 
 import static Wallet.UI.MainWindow.*;
@@ -26,6 +33,14 @@ public class FormOdemeEkle {
         panel.add(txtTutar);
         panel.add(lTutar);
         panel.add(gonder);
-        gonder.addActionListener(actionEvent -> Odeme.odeme());
+        gonder.addActionListener(actionEvent -> {
+            IDebtRepo repo = new DebtRepo();
+            Debt debt = new Debt();
+            debt.amount.set(Float.parseFloat(txtTutar.getText()));
+            debt.description.set(txtadi.getText());
+            debt.userId.set(user.id.get());
+            repo.addDebt(debt);
+            Odeme.odeme();
+        });
     }
 }

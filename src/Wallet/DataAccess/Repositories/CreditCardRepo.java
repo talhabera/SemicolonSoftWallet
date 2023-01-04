@@ -34,6 +34,7 @@ public class CreditCardRepo implements ICreditCardRepo {
                 creditCard.taken.set(rs.getFloat("Taken"));
                 creditCard.cardLimit.set(rs.getFloat("CardLimit"));
                 creditCard.interest.set(rs.getFloat("Interest"));
+                creditCard.description.set(rs.getString("Description"));
                 creditCard.userId.set(userId);
                 creditCards.add(creditCard);
             }
@@ -53,13 +54,14 @@ public class CreditCardRepo implements ICreditCardRepo {
     public void updateCreditCard(CreditCard card) {
         try
         {
-            String query = "update creditcard set Taken = ?, Interest = ?, CardLimit = ? where Id = ?";
+            String query = "update creditcard set Taken = ?, Interest = ?, CardLimit = ?, Description = ? where Id = ?";
 
             PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
             preparedStmt.setFloat   (1, card.taken.get());
             preparedStmt.setFloat   (2, card.interest.get());
             preparedStmt.setFloat   (3, card.cardLimit.get());
-            preparedStmt.setInt(4, card.id.get());
+            preparedStmt.setString   (4, card.description.get());
+            preparedStmt.setInt(5, card.id.get());
 
             preparedStmt.executeUpdate();
         }
@@ -78,13 +80,14 @@ public class CreditCardRepo implements ICreditCardRepo {
     public void addCreditCard(CreditCard card) {
         try
         {
-            String query = "insert into creditcard (CardLimit, Interest, Taken, UserId) values (?, ?, ?, ?)";
+            String query = "insert into creditcard (CardLimit, Interest, Taken, UserId, Description) values (?, ?, ?, ?, ?)";
 
             PreparedStatement preparedStmt = AppContext.getConnection().prepareStatement(query);
             preparedStmt.setFloat   (1, card.cardLimit.get());
             preparedStmt.setFloat   (2, card.interest.get());
             preparedStmt.setFloat   (3, card.taken.get());
             preparedStmt.setInt(4, card.userId.get());
+            preparedStmt.setString   (5, card.description.get());
 
             preparedStmt.execute();
         }
