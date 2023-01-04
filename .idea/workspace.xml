@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="guncelle">
-      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/AccountRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IAccountRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IAssetRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/ICreditCardRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/ICreditRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IDebtRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/Entities/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/Entities/Asset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/Entities/Credit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/Entities/CreditCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallet/Entities/Debt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IUserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/IUserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/Handlers/PasswordHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Handlers/PasswordHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/Services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/Services/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Services/ProfileService.java" afterDir="false" />
-    </list>
+    <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="guncelle" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672821503581</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="guncelle">
+      <created>1672836676330</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672836676330</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
