@@ -32,11 +32,13 @@ public class MainWindow {
         JButton odeme = new JButton("Ödeme");
         JButton alacak = new JButton("Alacak");
         JButton kart = new JButton("Kartlar");
-        profil.setBounds(0, 0, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 6);
-        hesabim.setBounds(0, arac.getScreenSize().height / 2 / 6, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 6);
-        odeme.setBounds(0, arac.getScreenSize().height / 2 / 6 * 2, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 6);
-        alacak.setBounds(0, arac.getScreenSize().height / 2 / 6 * 3, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 6);
-        kart.setBounds(0, arac.getScreenSize().height / 2 / 6 * 4, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 6);
+        JButton kredi = new JButton("Kredi");
+        profil.setBounds(0, 0, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
+        hesabim.setBounds(0, arac.getScreenSize().height / 2 / 7, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
+        odeme.setBounds(0, arac.getScreenSize().height / 2 / 7 * 2, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
+        alacak.setBounds(0, arac.getScreenSize().height / 2 / 7 * 3, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
+        kart.setBounds(0, arac.getScreenSize().height / 2 / 7 * 4, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
+        kredi.setBounds(0, arac.getScreenSize().height / 2 / 7 * 5, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
 
         panel.add(profil);
         profil.addActionListener(actionEvent -> Profil.profil());
@@ -53,6 +55,9 @@ public class MainWindow {
 
         panel.add(kart);
         kart.addActionListener(actionEvent -> KartBilgileri.kartBilgileri());
+
+        panel.add(kredi);
+        kredi.addActionListener(actionEvent -> KrediKart.krediKart());
 
         pencere.add(panel);
         pencere.setVisible(true);
