@@ -2,7 +2,6 @@ package Wallet.DataAccess.Repositories;
 
 import Wallet.DataAccess.Context.AppContext;
 import Wallet.Entities.Credit;
-import Wallet.Entities.Debt;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,7 +14,7 @@ public class CreditRepo implements ICreditRepo {
      * Gönderilen kullanıcı Id'sine göre kullanıcıya ait Credit nesnelerini döndürür
      *
      * @param userId Kullanıcı Id
-     * @return
+     * @return User Id ile eşleşen creditler
      */
     @Override
     public ArrayList<Credit> getCreditsByUserId(int userId) {
