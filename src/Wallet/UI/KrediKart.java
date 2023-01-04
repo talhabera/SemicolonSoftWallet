@@ -4,28 +4,22 @@ import Wallet.Services.ProfileService;
 
 import javax.swing.*;
 
-import java.awt.*;
-
 import static Wallet.UI.MainWindow.*;
+import static Wallet.UI.MainWindow.panel;
 
-
-public class KartBilgileri {
-
-
-    public  static void kartBilgileri(){
-        String data[][] = {            {"34567897765", "12/21","435","3456Tl"},
-
-                {"34567897765", "12/21","435","3456Tl"},
-                {"34567897765", "12/21","435","3456Tl"},
-                {"34567897765", "12/21","435","3456Tl"},
-                {"34567897765", "12/21","435","3456Tl"},
-        };
-         String kolonAdlari[] = {"KART NUMARASI", "AY/YIL","CCV","MİKTAR"};
-
-         JTable tabloKart = new JTable(data, kolonAdlari);
-
+public class KrediKart {
+    public static void krediKart(){
         screen();
-        ProfileService service = new ProfileService();
+        String data[][] = {            {"34567897765", "12/21","435","3456Tl","15%","1000"},
+                {"34567897765", "12/21","435","3456Tl","15%","1000"},
+                {"34567897765", "12/21","435","3456Tl","15%","1000"},
+                {"34567897765", "12/21","435","3456Tl","15%","1000"},
+        };
+        String kolonAdlari[] = {"KART NUMARASI", "AY/YIL","CCV","MİKTAR","faiz","eksi tutar"};
+
+        JTable tabloKart = new JTable(data, kolonAdlari);
+
+
         tabloKart.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10, arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 4 * 2);
 
         JButton kartSil = new JButton("Kart Sil");
@@ -35,7 +29,7 @@ public class KartBilgileri {
 
         panel.add(kartSil);
         panel.add(kartEkle);
-        kartEkle.addActionListener(actionEvent -> FormKartbilgileriEkle.formKartbilgileriEkle());
+        kartEkle.addActionListener(actionEvent -> FormKrediEkle.formKrediEkle());
 
 
         panel.add(tabloKart);
