@@ -10,12 +10,12 @@ import static Wallet.UI.MainWindow.panel;
 public class KrediKart {
     public static void krediKart(){
         screen();
-        String data[][] = {            {"34567897765", "12/21","435","3456Tl","15%","1000"},
-                {"34567897765", "12/21","435","3456Tl","15%","1000"},
-                {"34567897765", "12/21","435","3456Tl","15%","1000"},
-                {"34567897765", "12/21","435","3456Tl","15%","1000"},
+        String data[][] = {            {"deneme", "15%","435","3456Tl"},
+                {"deneme", "15%","435","3456Tl"},
+                {"deneme", "15%","435","3456Tl"},
+                {"deneme", "15%","435","3456Tl"},
         };
-        String kolonAdlari[] = {"KART NUMARASI", "AY/YIL","CCV","MİKTAR","faiz","eksi tutar"};
+        String kolonAdlari[] = {"Kredi ayrıntısı", "Faiz miktarı","Çekilen Miktar","Ödenen Miktar"};
 
         JTable tabloKart = new JTable(data, kolonAdlari);
 

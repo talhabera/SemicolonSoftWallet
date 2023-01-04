@@ -14,10 +14,10 @@ public class FormKartbilgileriEkle {
         JTextField txtyil = new JTextField();
         JTextField txtccv = new JTextField();
         JTextField txtTutar = new JTextField();
-        JLabel lnumara = new JLabel("Kart Numarası");
-        JLabel lyil = new JLabel("Ay/Yil");
-        JLabel lccv = new JLabel("CCV");
-        JLabel lTutar = new JLabel("Hesap Tutar");
+        JLabel lnumara = new JLabel("Kart Adı");
+        JLabel lyil = new JLabel("Faiz Miktarı");
+        JLabel lccv = new JLabel("Çekilen Miktar");
+        JLabel lTutar = new JLabel("Ödenen Miktar");
         JButton gonder = new JButton("Gönder");
 
         lnumara.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 1, arac.getScreenSize().width / 2 / 4, arac.getScreenSize().height / 2 / 10);

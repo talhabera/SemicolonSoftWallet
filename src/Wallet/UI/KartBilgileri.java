@@ -13,14 +13,13 @@ public class KartBilgileri {
 
 
     public  static void kartBilgileri(){
-        String data[][] = {            {"34567897765", "12/21","435","3456Tl"},
-
-                {"34567897765", "12/21","435","3456Tl"},
-                {"34567897765", "12/21","435","3456Tl"},
-                {"34567897765", "12/21","435","3456Tl"},
-                {"34567897765", "12/21","435","3456Tl"},
+        String data[][] = {            {"deneme", "33%","4353TL","3456Tl"},
+                {"deneme", "33%","4353TL","3456Tl"},
+                {"deneme", "33%","4353TL","3456Tl"},
+                {"deneme", "33%","4353TL","3456Tl"},
+                {"deneme", "33%","4353TL","3456Tl"},
         };
-         String kolonAdlari[] = {"KART NUMARASI", "AY/YIL","CCV","MİKTAR"};
+         String kolonAdlari[] = {"KART Adı", "Faiz Miktarı","Limit","Çekilen Miktar"};
 
          JTable tabloKart = new JTable(data, kolonAdlari);
 
