@@ -31,10 +31,14 @@ public class MainWindow {
         JButton hesabim = new JButton("Hesabım");
         JButton eft = new JButton("EFT/Havale");
         JButton odeme = new JButton("Ödeme");
-        profil.setBounds(0, 0, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 4);
-        hesabim.setBounds(0, arac.getScreenSize().height / 2 / 4, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 4);
-        eft.setBounds(0, arac.getScreenSize().height / 2 / 4 * 2, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 4);
-        odeme.setBounds(0, arac.getScreenSize().height / 2 / 4 * 3, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 4);
+        JButton alacak = new JButton("Alacak");
+        JButton kart = new JButton("Kartlar");
+        profil.setBounds(0, 0, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 6);
+        hesabim.setBounds(0, arac.getScreenSize().height / 2 / 7, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
+        eft.setBounds(0, arac.getScreenSize().height / 2 / 7 * 2, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
+        odeme.setBounds(0, arac.getScreenSize().height / 2 / 7 * 3, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
+        alacak.setBounds(0, arac.getScreenSize().height / 2 / 7 * 4, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
+        kart.setBounds(0, arac.getScreenSize().height / 2 / 7 * 5, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 7);
 
         panel.add(profil);
         profil.addActionListener(actionEvent -> Profil.profil());
@@ -47,6 +51,12 @@ public class MainWindow {
 
         panel.add(odeme);
         odeme.addActionListener(actionEvent -> Odeme.odeme());
+
+        panel.add(alacak);
+        alacak.addActionListener(actionEvent -> Alacak.alacak());
+
+        panel.add(kart);
+        kart.addActionListener(actionEvent -> KartBilgileri.kartBilgileri());
 
         pencere.add(panel);
         pencere.setVisible(true);

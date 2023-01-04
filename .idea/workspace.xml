@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="guncelle" />
+    <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="guncelle">
+      <change afterPath="$PROJECT_DIR$/src/Wallet/UI/Alacak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Wallet/UI/KartBilgileri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_01_2023_10_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_01_2023_10_37__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_01_2023_10_37__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_01_2023_10_37__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/MainWindow.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +70,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -114,6 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672687315521</updated>
       <workItem from="1672687316738" duration="8806000" />
+      <workItem from="1672837400934" duration="2999000" />
     </task>
     <task id="LOCAL-00001" summary="Kodlar düzenlendi">
       <created>1672692076986</created>
