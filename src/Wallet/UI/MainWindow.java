@@ -29,7 +29,7 @@ public class MainWindow {
 
         JButton profil = new JButton("Profil");
         JButton hesabim = new JButton("Hesabım");
-        JButton odeme = new JButton("Ödeme");
+        JButton odeme = new JButton("Borç");
         JButton alacak = new JButton("Alacak");
         JButton kart = new JButton("Kartlar");
         JButton kredi = new JButton("Kredi");

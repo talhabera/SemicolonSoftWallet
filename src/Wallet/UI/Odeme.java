@@ -18,8 +18,8 @@ public class Odeme {
     public static void odeme() {
         screen();
 
-        JButton odemeSil = new JButton("Ödeme Sil");
-        JButton odemeEkle = new JButton("Ödeme Ekle");
+        JButton odemeSil = new JButton("Borç Sil");
+        JButton odemeEkle = new JButton("Borç Ekle");
         odemeSil.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 6, arac.getScreenSize().height / 2 / 16);
         odemeEkle.setBounds(arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 6, arac.getScreenSize().height / 2 / 16);
 
