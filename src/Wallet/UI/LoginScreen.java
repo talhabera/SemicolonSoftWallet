@@ -62,6 +62,7 @@ public class LoginScreen {
                 lHatalipasword.setText("Giriş Bilgileri Hatalı");
             }
         });
+        
 
         LoginFrame.add(LoginPanel);
         LoginFrame.setVisible(true);
