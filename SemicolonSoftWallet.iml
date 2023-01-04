@@ -7,5 +7,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="mysql.connector" type="repository">
+        <properties maven-id="mysql:mysql-connector-java:5.1.40" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Ek/mysql-connector-java-5.1.40.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

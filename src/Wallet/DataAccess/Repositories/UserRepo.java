@@ -18,6 +18,12 @@ public class UserRepo implements IUserRepo {
                 User user = new User();
                 user.username.set(rs.getString("Username"));
                 user.password.set(rs.getString("Password"));
+                user.firstname.set(rs.getString("Firstname"));
+                user.lastname.set(rs.getString("Lastname"));
+                user.address.set(rs.getString("Address"));
+                user.phone.set(rs.getString("Phone"));
+                user.identity.set(rs.getString("Identity"));
+                user.balance.set(rs.getDouble("Balance"));
                 return user;
             }
         } catch (SQLException e) {

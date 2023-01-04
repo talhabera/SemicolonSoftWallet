@@ -10,7 +10,7 @@ public class LoginService implements ILoginService {
         IUserRepo userRepo = new UserRepo();
         User userDb = userRepo.getUserByUsername(user.username.get());
 
-        if (user.password.get().equals(userDb.password.get()))
+        if (userDb != null && user.password.get().equals(userDb.password.get()))
             return true;
         else
             return false;

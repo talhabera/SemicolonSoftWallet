@@ -52,15 +52,13 @@ public class LoginScreen {
             user.password.set(textKullaniciPassword.getText());
 
             LoginService service = new LoginService();
-            int a=1;
-            if (a==1)             //(service.checkAuth(user)) Geçiçi kapatıldı
+
+            if (service.checkAuth(user)) //Geçiçi kapatıldı
             {
                 Profil.profil();
                 LoginFrame.setVisible(false);
             } else {
-                //HATA MESAJI BURDA GÖSTERİLECEK
                 lHatalipasword.setText("Giriş Bilgileri Hatalı");
-
             }
         });
 

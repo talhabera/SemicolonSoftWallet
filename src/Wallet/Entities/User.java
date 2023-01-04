@@ -11,6 +11,10 @@ public class User extends BaseEntity {
             super.set(PasswordHandler.ConvertToMd5(value));
         }
     };
-    public Property<String> Ad = new Property<String>();
-    public Property<String> Soyad = new Property<String>();
+    public Property<String> firstname = new Property<String>();
+    public Property<String> lastname = new Property<String>();
+    public Property<String> identity = new Property<String>();
+    public Property<String> address = new Property<String>();
+    public Property<String> phone = new Property<String>();
+    public Property<Double> balance = new Property<Double>();
 }

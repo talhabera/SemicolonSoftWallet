@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class AppContext {
-    private final static String url = "jdbc : mysql : localhost/SSWallet";
+    private final static String url = "jdbc:mysql://localhost:3306/sswallet";
     private final static Connection CONNECTION;
 
     static {
