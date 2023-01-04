@@ -18,9 +18,13 @@ public class Odeme {
     public static void odeme() {
         screen();
 
-        JButton odemeGonder = new JButton("Ödeme");
-        odemeGonder.setBounds(arac.getScreenSize().width / 2 / 7 * 3, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
-        panel.add(odemeGonder);
+        JButton odemeSil = new JButton("Ödeme Sil");
+        JButton odemeEkle = new JButton("Ödeme Ekle");
+        odemeSil.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 6, arac.getScreenSize().height / 2 / 16);
+        odemeEkle.setBounds(arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 6, arac.getScreenSize().height / 2 / 16);
+
+        panel.add(odemeSil);
+        panel.add(odemeEkle);
 
         tablo.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10, arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 4 * 2);
 

@@ -26,6 +26,15 @@ public class KartBilgileri {
         screen();
         ProfileService service = new ProfileService();
         tabloKart.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10, arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 4 * 2);
+
+        JButton kartSil = new JButton("Kart Sil");
+        JButton kartEkle = new JButton("Kart Ekle");
+        kartSil.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 6, arac.getScreenSize().height / 2 / 16);
+        kartEkle.setBounds(arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 6, arac.getScreenSize().height / 2 / 16);
+
+        panel.add(kartSil);
+        panel.add(kartEkle);
+
         panel.add(tabloKart);
 
     }

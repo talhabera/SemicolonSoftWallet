@@ -16,9 +16,13 @@ public class Alacak {
     public static JTable tabloAlacak = new JTable(data, kolonAdlari);
     public static void alacak(){
         screen();
-        JButton odemeGonder = new JButton("Ödeme");
-        odemeGonder.setBounds(arac.getScreenSize().width / 2 / 7 * 3, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 3, arac.getScreenSize().height / 2 / 12);
-        panel.add(odemeGonder);
+        JButton alacakSil = new JButton("Alacak Sil");
+        JButton alacakekle = new JButton("Alacak ekle");
+        alacakSil.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 6, arac.getScreenSize().height / 2 / 16);
+        alacakekle.setBounds(arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 10 * 5 + 10, arac.getScreenSize().width / 2 / 6, arac.getScreenSize().height / 2 / 16);
+
+        panel.add(alacakSil);
+        panel.add(alacakekle);
 
         tabloAlacak.setBounds(arac.getScreenSize().width / 2 / 7 * 2, arac.getScreenSize().height / 2 / 10, arac.getScreenSize().width / 2 / 7 * 4, arac.getScreenSize().height / 2 / 4 * 2);
 
