@@ -3,7 +3,6 @@ package Wallet.UI;
 import java.awt.*;
 import javax.swing.*;
 
-import static Wallet.UI.Profil.tablo;
 import static Wallet.UI.MainWindow.*;
 
 public class Hesap {

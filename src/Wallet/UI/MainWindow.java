@@ -1,10 +1,15 @@
 package Wallet.UI;
 
 
+import Wallet.DataAccess.Repositories.IUserRepo;
+import Wallet.DataAccess.Repositories.UserRepo;
+import Wallet.Entities.User;
+
 import java.awt.*;
 import javax.swing.*;
 
 public class MainWindow {
+    public static User user;
     public static JFrame pencere = new JFrame();
     public static Toolkit arac = Toolkit.getDefaultToolkit();
     public static JPanel panel = new JPanel(null);
@@ -19,7 +24,8 @@ public class MainWindow {
 
         panel.removeAll();
 
-        //panel.setBackground(Color.yellow);
+        IUserRepo repo = new UserRepo();
+        user = repo.getUserByUsername(user.username.get());
 
         JButton profil = new JButton("Profil");
         JButton hesabim = new JButton("Hesabım");
@@ -31,24 +37,16 @@ public class MainWindow {
         odeme.setBounds(0, arac.getScreenSize().height / 2 / 4 * 3, arac.getScreenSize().width / 2 / 7, arac.getScreenSize().height / 2 / 4);
 
         panel.add(profil);
-        profil.addActionListener(actionEvent -> {
-            Profil.profil();
-        });
+        profil.addActionListener(actionEvent -> Profil.profil());
 
         panel.add(hesabim);
-        hesabim.addActionListener(actionEvent -> {
-            Hesap.hesap();
-        });
+        hesabim.addActionListener(actionEvent -> Hesap.hesap());
 
         panel.add(eft);
-        eft.addActionListener(actionEvent -> {
-            Aktarim.aktarim();
-        });
+        eft.addActionListener(actionEvent -> Aktarim.aktarim());
 
         panel.add(odeme);
-        odeme.addActionListener(actionEvent -> {
-            Odeme.odeme();
-        });
+        odeme.addActionListener(actionEvent -> Odeme.odeme());
 
         pencere.add(panel);
         pencere.setVisible(true);

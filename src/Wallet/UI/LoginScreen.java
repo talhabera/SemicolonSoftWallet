@@ -53,8 +53,9 @@ public class LoginScreen {
 
             LoginService service = new LoginService();
 
-            if (service.checkAuth(user)) //Geçiçi kapatıldı
+            if (service.checkAuth(user))
             {
+                MainWindow.user = user;
                 Profil.profil();
                 LoginFrame.setVisible(false);
             } else {

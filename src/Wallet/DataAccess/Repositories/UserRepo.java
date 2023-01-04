@@ -23,7 +23,7 @@ public class UserRepo implements IUserRepo {
                 user.address.set(rs.getString("Address"));
                 user.phone.set(rs.getString("Phone"));
                 user.identity.set(rs.getString("Identity"));
-                user.balance.set(rs.getDouble("Balance"));
+                user.balance.set(rs.getInt("Balance"));
                 return user;
             }
         } catch (SQLException e) {

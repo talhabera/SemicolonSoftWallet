@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="Kodlar düzenlendi">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java.xml" afterDir="false" />
+    <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="profil databaseden geliyor">
+      <change afterPath="$PROJECT_DIR$/src/Wallet/Services/IProfileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Wallet/Services/ProfileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ek/mysql-connector.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SemicolonSoftWallet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SemicolonSoftWallet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Context/AppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Context/AppContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wallet/Services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Hesap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Hesap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wallet/UI/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/LoginScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Profil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Profil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +32,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8c653e19-aea9-43b6-af7b-6a45640995e0" />
+        <option name="url" value="https://github.com/talhabera/SemicolonSoftWallet.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JmdhkZsdIsKJGSCOpCIHF9Ezjt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -125,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672692648298</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="database bağlandı">
+      <created>1672819243327</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672819243327</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +164,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Kodlar düzenlendi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kodlar düzenlendi" />
+    <MESSAGE value="database bağlandı" />
+    <MESSAGE value="profil databaseden geliyor" />
+    <option name="LAST_COMMIT_MESSAGE" value="profil databaseden geliyor" />
   </component>
 </project>
