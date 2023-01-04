@@ -1,0 +1,115 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ec1ec424-e641-4f69-8b7f-475bb63da548\" name=\"Changes\" comment=\"Kodlar düzenlendi\">\r\n      <change afterPath=\"$PROJECT_DIR$/Ek/mysql-connector.jar\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Wallet/DataAccess/Context/AppContext.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Ek/Database.json\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Ek/Wallet.json\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Wallet/DataAccess/Services/ILoginService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Wallet/Services/ILoginService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Wallet/DataAccess/Services/LoginService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Wallet/Services/LoginService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Wallet/Entities/User.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Wallet/Entities/User.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Wallet/Entities/Value.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Wallet/Wrappers/Property.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Wallet/UI/Hesap.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Wallet/UI/Hesap.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Wallet/UI/LoginScreen.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Wallet/UI/LoginScreen.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2JmdhkZsdIsKJGSCOpCIHF9Ezjt\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"C:/Users/tvlha/Desktop/mysql-connector.jar\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\tvlha\\Desktop\\SemicolonSoftWallet\\Ek\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.Main\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Wallet.Main\" />\r\n      <module name=\"SemicolonSoftWallet\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Wallet.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"mysql-connector.jar\" type=\"JarApplication\" temporary=\"true\">\r\n      <option name=\"JAR_PATH\" value=\"$PROJECT_DIR$/Ek/mysql-connector.jar\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JAR Application.mysql-connector.jar\" />\r\n        <item itemvalue=\"Application.Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"ec1ec424-e641-4f69-8b7f-475bb63da548\" name=\"Changes\" comment=\"\" />\r\n      <created>1672687315521</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1672687315521</updated>\r\n      <workItem from=\"1672687316738\" duration=\"8806000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Kodlar düzenlendi\">\r\n      <created>1672692076986</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672692076986</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Kodlar düzenlendi\">\r\n      <created>1672692548946</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672692548946</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Kodlar düzenlendi\">\r\n      <created>1672692648298</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672692648298</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Kodlar düzenlendi\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Kodlar düzenlendi\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java</url>\r\n          <line>13</line>\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,18 +5,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="ec1ec424-e641-4f69-8b7f-475bb63da548" name="Changes" comment="Kodlar düzenlendi">
+-      <change afterPath="$PROJECT_DIR$/Ek/mysql-connector.jar" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Context/AppContext.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Ek/Database.json" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Ek/Wallet.json" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Repositories/UserRepo.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Services/ILoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Services/ILoginService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Services/LoginService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Entities/User.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Wallet/Entities/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/Wrappers/Property.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/Hesap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/Hesap.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Wallet/UI/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/UI/LoginScreen.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/SemicolonSoftWallet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SemicolonSoftWallet.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Wallet/DataAccess/Context/AppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallet/DataAccess/Context/AppContext.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -39,22 +32,30 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "last_opened_file_path": "C:/Users/tvlha/Desktop/mysql-connector.jar",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/tvlha/Desktop/SemicolonSoftWallet/Ek/mysql-connector.jar&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  },
++  &quot;keyToStringList&quot;: {
++    &quot;DatabaseDriversLRU&quot;: [
++      &quot;mysql&quot;
++    ]
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\tvlha\Desktop\SemicolonSoftWallet\Ek" />
+@@ -80,8 +81,8 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="JAR Application.mysql-connector.jar" />
+         <item itemvalue="Application.Main" />
++        <item itemvalue="JAR Application.mysql-connector.jar" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -94,6 +95,9 @@
+       <option name="presentableId" value="Default" />
+       <updated>1672687315521</updated>
+       <workItem from="1672687316738" duration="8806000" />
++      <workItem from="1672730717177" duration="1483000" />
++      <workItem from="1672732270413" duration="123000" />
++      <workItem from="1672732406090" duration="1415000" />
+     </task>
+     <task id="LOCAL-00001" summary="Kodlar düzenlendi">
+       <created>1672692076986</created>
+@@ -116,7 +120,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1672692648298</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="Kodlar düzenlendi">
++      <created>1672730724413</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1672730724413</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">

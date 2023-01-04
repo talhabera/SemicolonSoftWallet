@@ -1,0 +1,80 @@
+Index: src/Wallet/DataAccess/Context/AppContext.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Wallet.DataAccess.Context;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\nimport java.sql.SQLException;\r\n\r\npublic class AppContext {\r\n    private final static String url = \"jdbc : mysql : localhost/SSWallet\";\r\n    private final static Connection CONNECTION;\r\n\r\n    static {\r\n        try {\r\n            CONNECTION = DriverManager.getConnection(url, \"root\", \"\");\r\n        } catch (SQLException e) {\r\n            throw new RuntimeException(e);\r\n        }\r\n    }\r\n\r\n    public static Connection getConnection() {\r\n        return CONNECTION;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Wallet/DataAccess/Context/AppContext.java b/src/Wallet/DataAccess/Context/AppContext.java
+--- a/src/Wallet/DataAccess/Context/AppContext.java	
++++ b/src/Wallet/DataAccess/Context/AppContext.java	
+@@ -5,7 +5,7 @@
+ import java.sql.SQLException;
+ 
+ public class AppContext {
+-    private final static String url = "jdbc : mysql : localhost/SSWallet";
++    private final static String url = "jdbc:mysql://localhost:3306/sswallet";
+     private final static Connection CONNECTION;
+ 
+     static {
+Index: SemicolonSoftWallet.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src\" isTestSource=\"false\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/SemicolonSoftWallet.iml b/SemicolonSoftWallet.iml
+--- a/SemicolonSoftWallet.iml	
++++ b/SemicolonSoftWallet.iml	
+@@ -7,5 +7,6 @@
+     </content>
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="library" exported="" name="mysql-connector" level="project" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/libraries/mysql_connector.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/mysql_connector.xml b/.idea/libraries/mysql_connector.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/libraries/mysql_connector.xml	
+@@ -0,0 +1,9 @@
++<component name="libraryTable">
++  <library name="mysql-connector">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/Ek/mysql-connector.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES />
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/dataSources.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/dataSources.xml	
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
++    <data-source source="LOCAL" name="sswallet@localhost" uuid="eb9c6cf1-a165-4df5-b6e1-a89292d77a6d">
++      <driver-ref>mysql.8</driver-ref>
++      <synchronize>true</synchronize>
++      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
++      <jdbc-url>jdbc:mysql://localhost:3306/sswallet</jdbc-url>
++      <working-dir>$ProjectFileDir$</working-dir>
++    </data-source>
++  </component>
++</project>
+\ No newline at end of file
